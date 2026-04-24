@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kowshik</title>
+    <meta name="description"
+        content="Portfolio of LunaAlbatross, an undergraduate engineering student specializing in Cybersecurity, Networking, and Backend Development.">
+
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="noise-overlay"></div>
+    <canvas id="network-canvas"></canvas>
+
+    <nav class="glass-nav">
+        <div class="logo" id="top-logo">&lt;Hi&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#skills" id="nav-skills">Skills</a></li>
+            <li><a href="#education" id="nav-edu">Education</a></li>
+            <li><a href="#projects" id="nav-projects">Projects</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="btn red"></span><span class="btn yellow"></span><span class="btn green"></span>
+                    <span class="title">bash - root@secure-sys:~</span>
+                </div>
+                <!-- Dynamic Typing Logic -->
+                <div class="terminal-body" id="typing-text"></div>
+            </div>
+
+            <h1 class="glitch" data-text="Kowshik T" id="main-heading">Kowshik T</h1>
+            <h2 class="subtitle">Security Engineering Student</h2>
+            <p class="description">Specializing in Information Security and Networking. Proficient in Python/Flask development with hands-on experience in firewall architecture and threat management.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary" id="btn-projects">View Operations <i
+                        class="fa-solid fa-crosshairs"></i></a>
+                <a href="https://linkedin.com/in/kowshik-thiruppathi" class="btn-secondary" id="btn-contact" target="_blank" rel="noopener noreferrer">LinkedIn Link</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="about" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">System.INFO</h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3><i class="fa-solid fa-user-shield"></i> Profile Execution Start</h3>
+                    <p>I am a Security Engineering student at Sri Shakthi Institute of Engineering & Technology, specializing in B.E. Computer Science & Engineering (Cyber Security). I have a deep fascination for secure data transmission and network architecture.</p>
+                    <br />
+                    <p>My foundation is built on core networking—configuring switches, Fortigate firewalls, and segmented network architectures. I also have development expertise in Python and Flask, which I use to build robust security tools like autonomous WAF engines and threat management systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-grid">
+                <div class="edu-card glass-card">
+                    <div class="edu-date">2023 – Present</div>
+                    <h3>B.E Computer Science & Engineering (Cyber Security)</h3>
+                    <p class="institute">Sri Shakthi Institue of Engineering & Technology</p>
+                    <p class="grade">Grade: 8.1 / 10</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, India</p>
+                </div>
+                <div class="edu-card glass-card">
+                    <div class="edu-date">2011 – 2023</div>
+                    <h3>Higher Secondary Education</h3>
+                    <p class="institute">Sri Krishna Matriculation Higher Secondary School</p>
+                    <p class="grade">Grade: 86.66 / 100</p>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Dindigul, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card glass-card">
+                    <i class="fa-solid fa-certificate text-cyan"></i>
+                    <h3>ISC2 Certified in Cyber Security</h3>
+                    <p>International Information System Security Certification Consortium</p>
+                    <span class="date">11/2024</span>
+                </div>
+                <div class="cert-card glass-card">
+                    <i class="fa-solid fa-cloud text-blue"></i>
+                    <h3>NPTEL-Google Cloud Foundation</h3>
+                    <p>IIT Kharagpur - Silver Medalist (68%)</p>
+                    <span class="date">10/2024</span>
+                </div>
+                <div class="cert-card glass-card">
+                    <i class="fa-solid fa-trophy text-orange"></i>
+                    <h3>HackQuest 2k25 CTF</h3>
+                    <p>CyberHeals Academy</p>
+                    <span class="date">02/2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Capabilities</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <i class="fa-solid fa-network-wired text-cyan"></i>
+                    <h3>Networking & Sec</h3>
+                    <p>Core Networking, Routing & Traffic Management, System Exploitation, and segmented network architecture.</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fa-solid fa-fire text-orange"></i>
+                    <h3>Infrastructure</h3>
+                    <p>Fortigate Firewall configuration, Policy Enforcement, Linux environment, and Docker containerization.</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fa-solid fa-code text-blue"></i>
+                    <h3>Programming</h3>
+                    <p>Expertise in Python, Data Structures & Algorithms (DSA), and building secure backends with Flask.</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fa-solid fa-database text-green"></i>
+                    <h3>Web & DB</h3>
+                    <p>Proficient in HTML, CSS, JavaScript, and MySQL for creating secure, data-driven web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Active Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-placeholder" style="background: linear-gradient(135deg, #0b1325, #0a2522);">
+                        <i class="fa-solid fa-robot fa-3x" style="color: #00F0FF; opacity: 0.6;"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="tech-tags">
+                            <span>WAF</span> <span>IDS/IPS</span> <span>Python</span>
+                        </div>
+                        <h3>Automated Web Application Firewall</h3>
+                        <p>An autonomous Python/Flask WAF featuring real-time signature-based threat mitigation, Global Panic Mode, and IP quarantine.</p>
+                        <span class="proj-date">02/2026 – 04/2026</span>
+                        <a href="https://github.com/LunaAlbatross/Autonomous-Cyber-Defence" class="project-link" target="_blank" rel="noopener noreferrer">Access Repository <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-placeholder" style="background: linear-gradient(135deg, #2b0808, #0f172a);">
+                        <i class="fa-solid fa-shield-virus fa-3x" style="color: #00FF41; opacity: 0.6;"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="tech-tags">
+                            <span>Monitoring</span> <span>Automation</span>
+                        </div>
+                        <h3>URLs Threat Management System</h3>
+                        <p>Real-time dashboard that automates the collection, parsing, and blocking of malicious URLs at the system level.</p>
+                        <span class="proj-date">02/2025 – 05/2025</span>
+                        <a href="https://github.com/LunaAlbatross/threat-intel-dashboard" class="project-link" target="_blank" rel="noopener noreferrer">Access Repository <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+                        <i class="fa-solid fa-bug fa-3x" style="color: #ef4444; opacity: 0.6;"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="tech-tags">
+                            <span>Malware</span> <span>Static Analysis</span> <span>JS</span>
+                        </div>
+                        <h3>Capy Malware Tool</h3>
+                        <p>A specialized static analysis utility designed for inspecting binary fingerprints, hashing, and signature detection.</p>
+                        <a href="https://github.com/LunaAlbatross/capy-malware-tool" class="project-link" target="_blank" rel="noopener noreferrer">Access Repository <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-placeholder" style="background: linear-gradient(135deg, #0f0c29, #302b63);">
+                        <i class="fa-solid fa-vial-virus fa-3x" style="color: #a855f7; opacity: 0.6;"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="tech-tags">
+                            <span>Debugging</span> <span>Python</span> <span>Management</span>
+                        </div>
+                        <h3>BugTracker</h3>
+                        <p>A comprehensive bug tracking and issue management system featuring real-time status updates and priority logging.</p>
+                        <a href="https://github.com/LunaAlbatross/BugTracker" class="project-link" target="_blank" rel="noopener noreferrer">Access Repository <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-img-placeholder" style="background: linear-gradient(135deg, #16213e, #0f3460);">
+                        <i class="fa-solid fa-project-diagram fa-3x" style="color: #f97316; opacity: 0.6;"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="tech-tags">
+                            <span>Simulation</span> <span>Networking</span> <span>Visualizer</span>
+                        </div>
+                        <h3>OSI Network Simulator</h3>
+                        <p>An interactive tool for visualizing packet travel through the seven layers of the OSI model across complex network topologies.</p>
+                        <a href="https://github.com/LunaAlbatross" class="project-link" target="_blank" rel="noopener noreferrer">Access Repository <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card glass-card"><span>English</span></div>
+                <div class="lang-card glass-card"><span>Tamil</span></div>
+                <div class="lang-card glass-card"><span>Spanish</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title">Initiate Handshake</h2>
+            <p>Looking to collaborate on a cyber project, analyze threats, or discuss security infrastructure?</p>
+            <div class="social-links">
+                <a href="https://github.com/LunaAlbatross" class="social-btn" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/kowshik-thiruppathi" class="social-btn" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:kowshikthiruppathi@gmail.com" class="social-btn" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i> Secure
+                    Email</a>
+            </div>
+            <p class="copyright">© 2026 Kowshik T. All connections secured.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
