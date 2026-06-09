@@ -170,6 +170,23 @@ body {
     text-shadow: 0 0 20px var(--cyan-glow); font-family: var(--font-mono);
 }
 .subtitle { font-size: 1.4rem; color: var(--cyan); margin-bottom: 1.5rem; font-weight: 300; letter-spacing: 1px; }
+
+/* Hero Meta Badges */
+.hero-meta {
+    display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;
+}
+.meta-badge {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 0.6rem 1.2rem; background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 6px;
+    color: var(--cyan); font-size: 0.95rem; font-family: var(--font-mono);
+    transition: all 0.3s ease;
+}
+.meta-badge:hover {
+    background: rgba(0, 240, 255, 0.15); border-color: var(--cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
 .description { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 3rem; max-width: 650px; font-weight: 300; }
 
 .cta-buttons { display: flex; gap: 1.5rem; justify-content: center; }
@@ -194,7 +211,11 @@ body {
 /* Typography Colors */
 .text-cyan { color: var(--cyan); text-shadow: 0 0 10px var(--cyan-glow); }
 .text-green { color: var(--green); text-shadow: 0 0 10px var(--green-glow); }
-.text-orange { color: #f97316; } .text-red { color: #ef4444; } .text-blue { color: #3b82f6; } .text-purple { color: #a855f7; }
+.text-orange { color: #f97316; }
+.text-red { color: #ef4444; }
+.text-blue { color: #3b82f6; }
+.text-purple { color: #a855f7; }
+.text-pink { color: #ec4899; }
 
 /* Skills Grid */
 .skills-grid {
